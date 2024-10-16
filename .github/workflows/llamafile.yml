@@ -21,7 +21,7 @@ jobs:
                   mkdir -p /usr/local/bin
                   TAG=$(curl -s "https://api.github.com/repos/Mozilla-Ocho/llamafile/tags" | grep '"name":' | sed -E 's/.*"([^"]+)".*/\1/' | head -n 1)
                   LLAMAFILE_FILE_URL="https://github.com/Mozilla-Ocho/llamafile/releases/download/$TAG/llamafile-$TAG"
-                  ZIPALIGN_FILE_URL="https://github.com/Mozilla-Ocho/llamafile/releases/download/$TAG/zipalign-$TAG"
+                  ZIPALIGN_FILE_URL="https://github.com/Mozilla-Ocho/llamafile/releases/download/0.8.5/zipalign-0.8.5"
                   LLAMAFILE_FILE="/usr/local/bin/llamafile"
                   ZIPALIGN_FILE="/usr/local/bin/zipalign"
                   
